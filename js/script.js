@@ -97,6 +97,5 @@ const image = document.getElementById('flag');
       num = Number(he)
       function countHeart(){
         num = num + 1
-        he.innerHTML = num
-      }
-      he.onclick = countHeart()
+        he = document.getElementById('heart').innerHTML = num 
+      } 
