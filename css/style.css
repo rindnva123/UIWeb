@@ -30,8 +30,12 @@
 #heart:hover{
     color:red;
     text-decoration:none;
+    cursor: pointer;
 }
 
+#link:hover{
+    cursor: pointer;
+}
 
 .logo {
     width: 100px;

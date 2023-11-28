@@ -90,12 +90,25 @@ const image = document.getElementById('flag');
       
 
       
-      var he
-      var text
-      var num
-      he = document.getElementById('heart').innerHTML
-      num = Number(he)
-      function countHeart(){
+    var he
+    var text
+    var num
+    he = document.getElementById('heart').innerHTML
+    num = Number(he)
+    function countHeart(){
         num = num + 1
         he = document.getElementById('heart').innerHTML = num 
-      } 
+    } 
+
+    function copyLink() {
+        var linkElement = document.getElementById("link");
+        var linkText = linkElement.innerText || linkElement.textContent;
+  
+        navigator.clipboard.writeText(linkText).then(function() {
+          var alertMessage = "Đường link đã được sao chép";
+          alert(alertMessage);
+        }, function(error) {
+          var errorMessage = "Lỗi khi sao chép đường link: " + error;
+          alert(errorMessage);
+        });
+    }
